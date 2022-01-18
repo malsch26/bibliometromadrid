@@ -5,7 +5,7 @@
 function myFunction() {
     var txt;
     if (confirm("¿Quieres cerrar sesión?")) {
-        window.location = "ejercicio1.html";
+        window.location = "index.html";
     } else {
       txt = "Cancelar";
     }
