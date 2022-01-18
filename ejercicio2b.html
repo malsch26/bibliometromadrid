@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Bibliometro - Comunidad de Madrid</title>
+
+                <!-- Responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="style/styles2b.css">
+
+                <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+                <!-- Favicon -->
+                        <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+                        <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+                        <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+                        <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+                        <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+                        <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+                        <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+                        <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+                        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+                        <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+                        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+                        <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+                        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+                        <link rel="manifest" href="favicon/manifest.json">
+                        <meta name="msapplication-TileColor" content="#ffffff">
+                        <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+                        <meta name="theme-color" content="#ffffff">
+
+    </head>
+    <body>
+
+     <!-- Barra de inicio -->
+
+     <header id="myHeader">
+
+               <!-- Logo y Titulo -->
+        <div id="menuIzq" class="col-6 col-s-12">
+            <img class="logo" src="images/logo.png" alt="logo">
+            <h1 class="nombre">Bibliometro</h1>    
+        </div>
+
+            <!-- Buscador e iconos -->
+        <div id=menuDer class="col-6 col-s-9"> 
+            <div>
+                <img onclick="myFunction()" class="iconf" src="images/user.svg" alt="user">
+                <img class="iconf" src="images/carrito-de-compras.svg" alt="carrito">
+                <h1 id="contador">#</h1>
+                <img class="iconf" src="images/boton-de-informacion.svg" alt="info"> 
+            </div>
+            <div class="form">
+                <form>
+                    <input type="text">
+                    <input id="button" type="submit" value="Buscar">
+                </form> 
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenedor 1 Completamente a la izquierda-->
+
+        <div id="contenedor1" class="col-4 col-s-12">
+
+                    <p class="center"><img id="fotoPerfil" class="foto center" alt="Foto de perfil" src="images/perfil3.jpg"></p>     <!-- Id que permite que la foto cambie según la función -->
+                    <h2 id="bienvenida">Bienvenida</h2>
+                    <hr>
+
+            <h2>Información</h2>
+
+            <div class="sidebar">
+                <a class="active" href="ejercicio1.html"><img class=icon1 src="images/home.png" alt="">Home</a>
+                <a href="#"><img class=icon1 src="images/customer.png" alt="">Conócenos</a>
+                <a href="#"><img class=icon1 src="images/libro.png" alt="">Intercambio de libros</a>
+                <a href="#"><img class=icon1 src="images/open-book.png" alt="">Club de lectura</a>
+                <a href="#"><img class=icon1 src="images/question.png" alt="">F.A.Q.</a>
+            </div>
+        </div>
+       
+                <!-- Contenedor 2 En el medio -->
+
+                <div id="contenedor2" class="col-4 col-s-12">
+                    <h2 id="title2">Últimos comentarios</h2>
+      <!-- Creamos 5 previos con la diferente información para que aparezca según el checkbox -->
+                    <div id="previo">
+                        <div class="contenedor-previo1">
+                            <img src="images/perfil.png" alt="Avatar">
+                            <p class="title"><span>Mariana Leis.</span>Estudiante.</p>
+                            <p>Me gustaría recomendarles El Principito, es un excelente libro e ideal para padres, aunque muchos digan que es para los niños.</p>
+                        </div>
+                        
+                        <div class="contenedor-previo2">
+                            <img src="images/perfil1.jpg" alt="Avatar">
+                            <p><span >Marta Lacadena.</span> Estudiante.</p>
+                            <p>El Principito de pequeña me lo leían mis padres, me encantaba. Recordarlo me hace despertar a ese niño que vive en nosotros.</p>
+                        </div> 
+
+                        <div class="contenedor-previo3">
+                            <img src="images/perfil2.jpg" alt="Avatar">
+                            <p><span >Ignacio Jade.</span> Estudiante.</p>
+                            <p>Es un clásico, sin duda, mis hijos lo van a tener que leer. El autor trata sobre los valores humanos y enseñanzas para la vida mediante el principito.</p>
+                        </div> 
+                    </div>
+
+                    <div id="previo2">
+                        <div class="contenedor-previo1">
+                            <img src="images/perfil3.jpg" alt="Avatar">
+                            <p class="title"><span>Sofia Rodríguez.</span>Estudiante.</p>
+                            <p>La narrativa tiene sus recursos literarios de los cuales cada uno cumple algún propósito en específico dentro de la historia.</p>
+                        </div>
+                        
+                        <div class="contenedor-previo2">
+                            <img src="images/perfil4.jpg" alt="Avatar">
+                            <p><span >Uxia Gonzalo.</span> Estudiante.</p>
+                            <p>Verónica Gerber utiliza no sólo los recursos literarios, sino los plásticos también. Es una novela que impacta desde que inicias la lectura.</p>
+                        </div> 
+
+                        <div class="contenedor-previo3">
+                            <img src="images/perfil5.jpg" alt="Avatar">
+                            <p><span >Lucía Gómez</span> Estudiante.</p>
+                            <p>Se trata de un juego de lecturas en donde la representación plástica adquiere un nivel narrativo igual de importante. </p>
+                        </div> 
+                    </div>
+                   
+                    <div id="previo3">
+                        <div class="contenedor-previo1">
+                            <img src="images/perfil6.jpg" alt="Avatar">
+                            <p class="title"><span>Marta Mas</span>Estudiante.</p>
+                            <p>La trama de El baile de las marionetas está construida de tal forma que mantiene intrigado al lector hasta las últimas páginas.</p>
+                        </div>
+                        
+                        <div class="contenedor-previo2">
+                            <img src="images/perfil7.jpg" alt="Avatar">
+                            <p><span >Itziar Lacadena.</span> Estudiante.</p>
+                            <p>El narrador omnisciente pone en antecedentes al lector desde los primeros capítulos. Aumenta la intriga por saber que va a suceder.</p>
+                        </div> 
+
+                        <div class="contenedor-previo3">
+                            <img src="images/perfil8.jpg" alt="Avatar">
+                            <p><span >Nuria Medina.</span> Estudiante.</p>
+                            <p>Uno de los grandes atractivos de esta novela es el dinamismo con el que la voz narrativa consigue, a través de las diferentes localizaciones.</p>
+                        </div> 
+                    </div>
+
+                    <div id="previo4">
+                        <div class="contenedor-previo1">
+                            <img src="images/perfil9.jpg" alt="Avatar">
+                            <p class="title"><span>Javier Gallego.</span>Estudiante.</p>
+                            <p>Aunque pueda parecer extraño no había visto ni oído nada de este libro hasta que me topé con él durante mis vacaciones estivales.</p>
+                        </div>
+                        
+                        <div class="contenedor-previo2">
+                            <img src="images/perfil10.jpg" alt="Avatar">
+                            <p><span >Laura Romero.</span> Estudiante.</p>
+                            <p>Me interesó el hecho de que fuese escrito por Josefina Aldecoa de la cual no había leído ningún libro.</p>
+                        </div> 
+
+                        <div class="contenedor-previo3">
+                            <img src="images/perfil11.jpg" alt="Avatar">
+                            <p><span >Oriana Carlucci.</span> Estudiante.</p>
+                            <p>Este libro es el primero de una trilogía que narra las memorias de la abuela y madre de la autora, todas ellas maestras en colegios rurales.</p>
+                        </div> 
+                    </div>
+
+                    <div id="previo5">
+                        <div class="contenedor-previo1">
+                            <img src="images/perfil12.jpg" alt="Avatar">
+                            <p class="title"><span>Gabriella Navarro.</span>Estudiante.</p>
+                            <p>La novela transcurre entre 1942 y 1943 en Gibraltar y La Línea. Esa época me fascina y me gustaría recomendarla un montón.</p>
+                        </div>
+                        
+                        <div class="contenedor-previo2">
+                            <img src="images/perfil13.jpg" alt="Avatar">
+                            <p><span >Alejandro Barahona.</span> Estudiante.</p>
+                            <p>El italiano alterna el pasado con el presente, pues el narrador está investigando sobre aquellos hechos.</p>
+                        </div> 
+
+                        <div class="contenedor-previo3">
+                            <img src="images/perfil14.jpg" alt="Avatar">
+                            <p><span >Andrés Hernández.</span> Estudiante.</p>
+                            <p>Pérez-Reverte ambienta muy bien la novela en el terreno fronterizo de Gibraltar. Se puede apreciar cómo lo hace desde la primera palabra.</p>
+                        </div> 
+                    </div>
+    <!-- Este contenedor es el de la respuesta del usuario -->
+                    <div id="contenedor-previo4">
+                        <img id="imagenoculta" src="images/perfil14.jpg" alt="Avatar">
+                        <p><span id="nombre"></span> Estudiante.</p>
+                        <p id="contenedortexto"></p>
+                    </div> 
+                        <div class="contenedor2-1">
+                        <form>
+                            <textarea id="respuesta" name="respuesta" rows="4" cols="50">
+                                ¿Lo leíste? Escribe tu opinión sobre este libro.
+                            </textarea>
+                            <br><br>
+                            <input onclick="miComentario()" id="button1" type="button" value="Comentar">     <!-- Funcion que al comentar se muestra el comentario del usuario -->
+                            </form>
+                        </div>
+                </div>
+
+                <!-- Contenedor 3 Completamente a la derecha -->
+        <div id="contenedor3" class="col-4 col-s-12">
+            <h2 id="title3">Más Leídos</h2>
+        <div class="contenedor3-1">
+                <div class="row">
+                    <div class="col-85">
+                        <input id="myCheck" type="checkbox" class="libros" onclick="myCheck()">     <!-- Funcion clicar el check -->
+                        <label id="Libro1">Conjunto vacío; Veronica Gerber</label>
+                    </div>
+                    <div class="col-15">
+                        <img id="carro1" class="iconc" onclick="document.getElementById('carro1').src='images/carros.png'" src="images/carrito-de-compras.png" alt="carrito-de-compras">     <!-- Funcion on click para que el carrito cambie de color o cuente -->
+                    </div>
+                </div>  
+                <div class="row">
+                    <div class="col-85">
+                        <input id="myCheck1" type="checkbox" class="libros" onclick="myCheck()">
+                        <label id="Libro2">El baile de las marionetas; Mercedes Guerra</label>
+                    </div>
+                    <div class="col-15">
+                        <img id="carro2" class="iconc" onclick="document.getElementById('carro2').src='images/carros.png'" src="images/carrito-de-compras.png" alt="carrito-de-compras">
+                    </div>
+                </div>  
+                <div class="row">
+                    <div class="col-85">
+                        <input id="myCheck2" type="checkbox" class="libros" onclick="myCheck()">
+                        <label id="Libro3">Historia de una maestra; Josefina Aldecoa</label>
+                    </div>
+                    <div class="col-15">
+                        <img id="carro3" class="iconc" onclick="document.getElementById('carro3').src='images/carros.png'" src="images/carrito-de-compras.png" alt="carrito-de-compras">
+                    </div>
+                </div>  
+                <div class="row">
+                    <div class="col-85">
+                        <input id="myCheck3" type="checkbox" class="libros" onclick="myCheck()">
+                        <label id="Libro4">El Italiano; Arturo Perez-Reverte</label> 
+                    </div>
+                    <div class="col-15">
+                        <img id="carro4" class="iconc" onclick="document.getElementById('carro4').src='images/carros.png'" src="images/carrito-de-compras.png" alt="carrito-de-compras">
+                    </div>
+                </div>  
+        </div>  
+        </div>
+
+                <!-- Pie de página -->
+        
+                <footer class="footer col-12 col-s-12">
+                
+                    <a  href="https://www.facebook.com/metrodemadrid"><img class="footer-link" src="images/facebook.svg" alt=""></a>
+                    <a  href="https://twitter.com/metro_madrid"><img class="footer-link" src="images/signo-de-twitter.svg" alt=""></a>
+                    <a  href="https://www.youtube.com/user/MetroMadridTV"><img class="footer-link" src="images/youtube.svg" alt=""></a>                
+                    <a  href="https://www.metromadrid.es/es/viaja-en-metro/bibliometros"><img class="footer-link" src="images/www.svg" alt=""></a>
+                    <p>Bibliometro - Comunidad de Madrid</p>
+                    <p>© 2021 - Todos los Derechos Reservados</p>
+                    <p>www.metromadrid.es</p>
+                </footer>
+       
+                <!-- Javascript -->
+                <script src="script/script1.js"></script>
+    </body>
+</html>
+
+

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Bibliometro - Comunidad de Madrid</title>
+
+                <!-- Responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="style/styles1.css">
+
+                <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+                <!-- Favicon -->
+                        <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+                        <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+                        <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+                        <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+                        <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+                        <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+                        <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+                        <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+                        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+                        <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+                        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+                        <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+                        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+                        <link rel="manifest" href="favicon/manifest.json">
+                        <meta name="msapplication-TileColor" content="#ffffff">
+                        <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+                        <meta name="theme-color" content="#ffffff">
+
+    </head>
+    <body>
+
+         <!-- Barra de inicio -->
+
+         <header class="header">
+
+            <!-- Logo y Titulo -->
+
+            <div id="menuIzq" class="col-6 col-s-12">
+                <img class="logo" src="images/logo.png" alt="logo">
+                <h1 class="nombre">Bibliometro</h1>    
+            </div>
+            <!-- Buscador e icono -->
+
+            <div id=menuDer class="col-6 col-s-9"> 
+                <div>
+                    <img class="iconf" src="images/boton-de-informacion.svg" alt="info"> 
+                </div>
+                <div class="form">
+                    <form>
+                        <input type="text">
+                        <input id="button" type="submit" value="Buscar">
+                    </form> 
+                </div>
+            </div>
+             
+        </header>
+
+    <!-- Contenedor 1 Completamente a la izquierda -->
+    
+    <div id="contenedor1" class="col-3 col-s-12"> 
+    <!-- Foto de perfil y boton suscribir -->
+        <p><img class="foto center" src="images/foto1.jpg" alt=""></p> 
+        <h2>¡Te invitamos a suscribirte!</h2>
+        <a id="btn" href="ejercicio2a.html">Suscríbete</a>
+        <hr>
+    <!-- Menu de informacion -->
+        <h2>Información</h2>
+
+        <div class="sidebar">
+            <a class="active" href="ejercicio1.html"><img class=icon1 src="images/home.png" alt="">Home</a>
+            <a href="#" onclick="openNav1()"><img class=icon1 src="images/customer.png" alt="">Conócenos</a> <!-- Funcion para abrir las pestañas -->
+            <a href="#" onclick="openNav2()"><img class=icon1 src="images/libro.png" alt="">Intercambio de libros</a>
+            <a href="#" onclick="openNav3()"><img class=icon1 src="images/open-book.png" alt="">Club de lectura</a>
+            <a href="#" onclick="openNav4()"><img class=icon1 src="images/question.png" alt="">F.A.Q.</a>
+        </div>
+
+        <!-- Información para los diferentes apartados del menu -->
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>  <!-- Botón para cerrar la pestaña -->
+            <div class="overlay-content">
+                <h2>Conócenos</h2>
+                <p>Bibliometro es un sistema de préstamo gratuito de libros, ubicado en 12 estaciones de la red de Metro de Madrid. Para obtener el Carnet Único de Bibliotecas Públicas de la Comunidad de Madrid y poder hacer uso de este servicio, basta con presentar el DNI en cualquiera de los módulos de Bibliometro. El carnet se expide en el momento y se puede utilizar también en las bibliotecas de la Comunidad de Madrid y del Ayuntamiento que se encuentran dentro del municipio de Madrid, así como en más de 90 bibliotecas de la Comunidad.</p>
+                <img class="imgpopup" src="images/cabecera_01.jpeg" alt="">
+            </div>
+        </div>
+
+        <div id="myNav2" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+            <div class="overlay-content">
+            <h2 class="title">Intercambio de libros</h2>
+            <ul> 
+                <li>Podrán ser usuarios del servicio de Bibliometro los titulares de los carnés de Bibliotecas Públicas del Ayuntamiento de Madrid y de la Comunidad de Madrid, además de los titulares del carné de Bibliometro.</li>
+                <li>El carné de Bibliometro se expedirá en los módulos de Bibliometro de lunes a viernes, excepto festivos, en horario de 13.30 a 20.00 horas, previa presentación del DNI, pasaporte o tarjeta de residencia.</li>
+                <li>CEl carné es personal, intransferible y es válido en todas las Bibliotecas Públicas del Ayuntamiento de Madrid y de la Comunidad de Madrid.</li>
+                <li>Los menores que no tengan DNI pueden utilizar el servicio de Bibliometro, con la autorización firmada del padre, madre o tutor acompañada de la fotocopia de su DNI.</li>
+                <li>El sistema permite el préstamo de tres libros por lector (solo uno de ellos podrá ser de la última guía de novedades) por un periodo máximo de 30 días. Sin renovación.</li>
+                <li>La devolución del libro se puede realizar en cualquier módulo del Bibliometro, durante el horario de apertura, y en los módulos que cuenten con buzones de devolución, las 24 horas.</li>
+                <li>El retraso en la devolución será sancionado con la suspensión del servicio de préstamo durante un período igual a los días de retraso en la devolución.</li>
+                <li>En caso de pérdida o deterioro del libro, el lector está obligado a su reposición o compensación.</li>
+            </ul>
+                <img class="imgpopup" src="images/bibliometros_02.png" alt="">
+            </div>
+        </div>
+
+        <div id="myNav3" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">&times;</a>
+            <div class="overlay-content">
+            <h2>Club de lectura</h2>
+            <p> Las nuevas plataformas de lectura social constituyen una alternativa a los tradicionales clubes de lectura presenciales que se desarrollan en las bibliotecas. Ofrecen espacios sin imperativos físicos, moderados por personas especializadas, para leer en compañía, comunicarse a través de chats o líneas de debate y acceder a material complementario a las lecturas en cualquier formato.</p>
+            <br>
+            <h3>Actualmente, contamos con cinco salas destinadas a edades, temáticas y géneros diversos:</h3>    
+            <ul> 
+                <li>Brújula literaria, moderada por el escritor Víctor Gutiérrez, permite descubrir lo más destacable de la narrativa del año o algún género especialmente característico, discutido o leído.</li>
+                <li>Los sabedores, conducida por el escritor Daniel Blanco, plantea lecturas para debatir sobre los paradigmas de la sociedad actual y los grandes retos del siglo XXI.</li>
+                <li>Comando lector, también a cargo de Daniel Blanco, acerca las mejores historias de misterio, superación, thrillers o novelas gráficas a la población más joven (de 13 a 16 años).</li>
+                <li>Sui generis, moderada por el escritor y filólogo David Hidalgo y centrada en subgéneros literarios, como la ciencia ficción, el terror o la fantasía, es la última incorporación a la plataforma.</li>
+                <li>Por último, La buena vida, gestionada por las Mediatecas de Alcobendas y coordinada por la escritora y periodista Maribel Orgaz, rescata historias de amistad, encuentros y viajes.</li>
+            </ul> 
+            <br><br>  
+            <p>Acomódate en cualquiera de nuestras salas para disfrutar más y mejor de los libros, interpretar y profundizar en su lectura, conocer a sus autores a través de sus obras e incluso conversar con ellos en los encuentros virtuales.</p>   
+            <br>
+            </div>
+        </div>
+
+        <div id="myNav4" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav4()">&times;</a>
+            <div class="overlay-content">
+                <h2 class="title">F.A.Q</h2>
+                <button class="acordion">¿Dónde están ubicados?</button>
+                <div class="panel">
+                <p class="respuesta">Puedes conseguir un bibliometro en las estaciones de: Nuevos Ministerios, Puerta del Sur, Embajadores, Puerta de Arganda, Canal, Mar de Cristal, Aluche, Sierra de Guadalupe, Moncloa, Carabanchel Alto, Legazpi, Chamartín</p>
+                <img class="imgpopup" src="images/mapa.svg" alt="">
+                </div>
+
+                <button class="acordion">¿Cómo puedo hacerme el carné?</button>
+                <div class="panel">
+                <p class="respuesta">Personalmente en las bibliotecas. Para los menores de 18 años será necesario presentar el impreso de autorización firmado por el padre, madre o tutor y la fotocopia del DNI o documento similar del autorizante.</p>
+                </div>
+
+                <button class="acordion">¿Qué documentos necesito para hacer el carné?</button>
+                <div class="panel">
+                <p class="respuesta">El DNI u otro documento que acredite legalmente la identidad personal. Para los menores de edad es necesaria la autorización del padre, la madre o tutor legal Se deberá presentar siempre el documento original y vigente.</p>
+                </div>
+
+                <button class="acordion">¿Puedo pedir en préstamo un libro que esté en otra biblioteca de la red?</button>
+                <div class="panel">
+                <p class="respuesta">Sí, el Préstamo Intercentros permite a los usuarios llevar en préstamo, desde cualquier biblioteca participante de la Red de la Comunidad de Madrid, libros procedentes de otros centros integrados.</p>
+                </div>
+
+                <button class="acordion">¿Puedo consultar Internet en las bibliotecas?</button>
+                <div class="panel">
+                <p class="respuesta">Todas las bibliotecas cuentan con Internet y wifi.</p>
+                </div>
+
+                <button class="acordion">¿Cuántos días me conservan la reserva?</button>
+                <div class="panel">
+                <p class="respuesta">Tres días a partir del día de activación.</p>
+                </div>
+
+                <button class="acordion">¿Puedo solicitar un libro que no está en el catálogo colectivo de la Comunidad de Madrid?</button>
+                <div class="panel">
+                <p class="respuesta">Sí, a través del Área de usuario y personalmente en la biblioteca rellenando el impreso de solicitud o desiderata. También se puede solicitar en el préstamo interbibliotecario.</p>
+                </div>
+
+                <button class="acordion">¿Cuántos libros, revistas y audiovisuales puedo llevar en préstamo?</button>
+                <div class="panel">
+                <p class="respuesta">Cada usuario puede llevar en préstamo, no renovable: 6 libros durante un máximo de 30 días, 6 documentos audiovisuales, sonoros o electrónicos durante un máximo de 7 días, 1 lector de libros electrónicos durante 1 mes, según disponibilidad (Biblioteca Luis Rosales) 3 revistas durante un máximo de 7 días.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+                <!-- Contenedor 2 En el medio -->
+
+                <div id="contenedor2" class="col-8 col-s-12">
+
+                    <div class="mySlides fade">
+                      <img class="carrusel" src="images/foto2.jpg" alt="foto">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <img class="carrusel" src="images/foto4.jpg" alt="foto">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img class="carrusel" src="images/foto5.jpg" alt="foto">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img class="carrusel" src="images/foto6.jpg" alt="foto">
+                    </div>
+                    
+                    <!-- Botones para regresar o seguir adelante -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <br>
+                    
+                    <!-- Puntos del centro del carrusel -->
+                    <div style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)"></span> 
+                      <span class="dot" onclick="currentSlide(2)"></span> 
+                      <span class="dot" onclick="currentSlide(3)"></span> 
+                      <span class="dot" onclick="currentSlide(4)"></span> 
+                    </div>
+                                      
+                </div>
+
+                <!-- Contenedor 3 Completamente a la derecha -->
+                
+                <div id="contenedor3" class="col-1 col-s-12">
+                </div>
+
+                <!-- Pie de página -->
+        
+                <footer class="footer col-12 col-s-12">
+                
+                    <a  href="https://www.facebook.com/metrodemadrid"><img class="footer-link" src="images/facebook.svg" alt=""></a>
+                    <a  href="https://twitter.com/metro_madrid"><img class="footer-link" src="images/signo-de-twitter.svg" alt=""></a>
+                    <a  href="https://www.youtube.com/user/MetroMadridTV"><img class="footer-link" src="images/youtube.svg" alt=""></a>                
+                    <a  href="https://www.metromadrid.es/es/viaja-en-metro/bibliometros"><img class="footer-link" src="images/www.svg" alt=""></a>
+                    <p class="footer">Bibliometro - Comunidad de Madrid</p>
+                    <p class="footer">© 2021 - Todos los Derechos Reservados</p>
+                    <p class="footer">www.metromadrid.es</p>
+                </footer>
+       
+                <!-- Javascript -->
+                <script src="script/script3.js"></script>
+
+    </body>
+</html>
+
+
+
+
